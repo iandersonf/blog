@@ -7,7 +7,7 @@ image: blog
 # Deploy to these servers.
 servers:
   web:
-    - 192.168.0.1
+    - demo.exitsoftware.io
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -20,9 +20,9 @@ servers:
 #
 # Don't use this when deploying to multiple web servers (then you have to terminate SSL at your load balancer).
 #
-# proxy:
-#   ssl: true
-#   host: app.example.com
+proxy:
+  ssl: true
+  host: alpha.exitsoftware.io
 
 # Where you keep your container images.
 registry:
@@ -30,7 +30,7 @@ registry:
   server: localhost:5555
 
   # Needed for authenticated registries.
-  # username: your-user
+  username: ianderson
 
   # Always use an access token rather than real password when possible.
   # password:
